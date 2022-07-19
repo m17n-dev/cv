@@ -5,6 +5,8 @@
 |key|value|
 |----|----|
 |名前|瀬野 哲朗|
+|ポートフォリオ|[myrails-react-todo-v4](https://github.com/m17n-dev/myrails-react-todo-v4)|
+|ポートフォリオ|[BookSearchWpfApp](https://github.com/m17n-dev/BookSearchWpfApp)|
 |Twitter|[@m17n_dev](https://twitter.com/m17n_dev)|
 |Qiita|[@m17n_dev](https://qiita.com/m17n_dev) 
 
@@ -48,7 +50,7 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 - CIサービスの導入
 - コンテナ化(Docker化)
 - インフラのコード化
-- 負荷試験シナリオの作成
+- 負荷試験シナリオ作成
 
 ## 主な業務経歴
 
