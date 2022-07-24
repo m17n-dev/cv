@@ -5,8 +5,8 @@
 |key|value|
 |----|----|
 |名前|瀬野 哲朗|
-|ポートフォリオ|[myrails-react-todo-v4 (Rails API + React)](https://github.com/m17n-dev/myrails-react-todo-v4)|
-|ポートフォリオ|[BookSearchWpfApp (.NET Framework)](https://github.com/m17n-dev/BookSearchWpfApp)|
+|ポートフォリオ|[myrails-react-todo-v4](https://github.com/m17n-dev/myrails-react-todo-v4)(Rails API + React)|
+|ポートフォリオ|[BookSearchWpfApp](https://github.com/m17n-dev/BookSearchWpfApp)(.NET Framework)|
 |Twitter|[@m17n_dev](https://twitter.com/m17n_dev)|
 |Qiita|[@m17n_dev](https://qiita.com/m17n_dev) 
 
