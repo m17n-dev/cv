@@ -32,7 +32,7 @@ MySQL | PostgreSQL | Oracle | SQL Server
 
 #### AWS
 
-VPC | S3 | ELB | ECR | CodeBuild | CodePipline | EC2 | ECS | Fargate | Route53 | ACM | IAM | RDS(MySQL) | DynamoDB | Kinesis firehose | SES | KMS | SSM
+VPC | S3 | CloudFront | API Gateway | Lambda | ELB | ECR | CodeBuild | CodePipline | EC2 | ECS | Fargate | Route53 | ACM | IAM | RDS(MySQL) | DynamoDB | Kinesis firehose | SES | KMS | SSM
 
 #### Firebase
 
@@ -53,6 +53,28 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 - 負荷試験シナリオ作成
 
 ## 主な業務経歴
+
+### CDN調査【CloudFront/S3】
+【プロジェクト概要】CDNのキャッシュや圧縮に関する設定を最適化して高速化を行うための調査を担当(2022年)
+
+【担当業務】CloudFrontキャッシュヒット率の向上の調査、圧縮形式GzipとBrotliの比較調査、プロトコルHTTP/2とHTTP/3の比較調査。具体的には下記。
+
+- CloudFrontディストリビューションの作成
+- ビヘイビア（パスパターン）の設定
+- CloudFrontポリシーの作成
+- プロトコルと圧縮形式の設定の違いによるレスポンス時間の測定
+
+【発揮したバリュー】利用が想定される帯域幅を検証環境で作り、実際の利用時のダウンロード時間を再現し計測。圧縮率が大きかったBrotliの方がレスポンスタイムが高速になることや接続タイムがHTTP/3の方が高速になることも検証結果から確認。キャッシュヒット率の向上のため行ったパスパターンの的確な設定はCloudFrontキャッシュ最適化に貢献。
+
+### EdTechサービスWebアプリケーション開発【Rails/JavaScript】
+【プロジェクト概要】EdTechサービスのRailsによるバックエンドシステムの機能改善を担当(2022年)
+
+【担当業務】UIの改善、ビジネスロジックの作成、要件定義、詳細設計、実装、テスト、コードレビュー。具体的には下記。
+
+- テンプレートファイル.slim、.erbによるViewの作成
+- Rubyモジュールの作成
+
+【発揮したバリュー】自動計算のモジュールを作成し機能改善に貢献。
 
 ### 高負荷Webサービスの負荷試験、性能試験【JMeter/BeanShell/Terraform/AWS】
 
