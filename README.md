@@ -23,16 +23,16 @@
 Java | Ruby | Python | PHP | Perl | JavaScript | TypeScript | VC++ | C# | Google Apps Script
 
 ### フレームワーク等
-Struts | Ruby on Rails | CakePHP | jQuery | React.js | MFC | .NET Framework | RSpec
+Express | Struts | Ruby on Rails | CakePHP | jQuery | React.js | MFC | .NET Framework | RSpec
 
 ### RDB/NoSQL
-MySQL | PostgreSQL | Oracle | SQL Server
+MySQL | PostgreSQL | Oracle | SQL Server | DynamoDB
 
 ### クラウド
 
 #### AWS
 
-VPC | S3 | CloudFront | API Gateway | Lambda | ELB | ECR | CodeBuild | CodePipline | EC2 | ECS | Fargate | Route53 | ACM | IAM | RDS(MySQL) | DynamoDB | Kinesis firehose | SES | KMS | SSM
+VPC | S3 | CloudFront | API Gateway | Lambda | ELB | ECR | CodeBuild | CodePipline | EC2 | ECS | Fargate | Route53 | ACM | IAM | RDS(MySQL) | DynamoDB | Kinesis firehose | SES | KMS | SSM | CloudFormation
 
 #### Firebase
 
@@ -53,6 +53,19 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 - 負荷試験シナリオ作成
 
 ## 主な業務経歴
+
+### 接続テストページの作成【JavaScript/CloudFront/S3/API Gateway/Lambda/DynamoDB/CloudFormation】
+【プロジェクト概要】利用者の接続環境に問題ないかを診断するための自動テストを行うWebアプリケーションの開発を担当(2022年)
+
+【担当業務】診断項目の調査、フロントエンド自動テストページの作成、AWSインフラの構築、インフラ構築手順書の作成とインフラのコード化。具体的には下記。
+
+- userAgent/JavaScriptのブラウザ機能のテストの作成
+- HTTP/Websoketの通信方式のテストの作成
+- WebStrage/Cookieのデータ管理のテストの作成
+- CloudFront + API Gateway REST/WebSocket + S3の連携の構築
+- AWSインフラのCloudFormationによるコード化
+
+【発揮したバリュー】CloudFront + API Gateway WebSocket + S3の構築例の情報が少なかったが、AWS公式ドキュメントを地道に調査し課題を解決。AWSマネージドサービスの幅広い知識とフロントエンド、バックエンドの開発経験を生かし、運用コストを抑えたアプリケーション開発に成功。また短期間での開発要望に応え、開発リードタイムの短縮によってクライアントのサービスの付加価値を高めることに貢献。
 
 ### CDN調査【CloudFront/S3】
 【プロジェクト概要】CDNのキャッシュや圧縮に関する設定を最適化して高速化を行うための調査を担当(2022年)
