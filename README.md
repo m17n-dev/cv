@@ -203,7 +203,7 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 - WordPress管理画面捜査の説明とマニュアル化
 
 
-## 小売業商品発注システムAndroidアプリのプロトタイプ開発【Android/Java】
+### 小売業商品発注システムAndroidアプリのプロトタイプ開発【Android/Java】
 
 【プロジェクト概要】小売業にBYOD導入実施を行うための商品発注モバイルアプリのプロトタイプ開発(2016年)
 
@@ -214,7 +214,7 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 - Filebase（Auth、Realtime Database）のMBaaS/BaaSを利用したデータベースを構築
 
 
-## 料理動画学習Webアプリケーションの個人開発【Linux CentOS/Ruby on Rails/Git/Vagrant】
+### 料理動画学習Webアプリケーションの個人開発【Linux CentOS/Ruby on Rails/Git/Vagrant】
 
 【プロジェクト概要】Ruby on Railsを利用した料理動画Webアプリケーション開発(2015年)
 
@@ -227,7 +227,7 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 - 料理動画のコンテンツ制作
 
 
-## 語学学習アプリの個人開発【Android/Java】
+### 語学学習アプリの個人開発【Android/Java】
 
 【プロジェクト概要】語学学習Androidアプリ開発(2012年)
 
