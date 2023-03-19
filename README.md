@@ -47,7 +47,10 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 ## バリューを発揮しやすい業務
 
 - クラウドアーキテクチャ設計
+- サーバーレスアーキテクチャの導入
+- CDNの導入
 - CIサービスの導入
+- デプロイの自動化
 - コンテナ化(Docker化)
 - インフラのコード化
 - 負荷試験シナリオ作成
@@ -65,7 +68,7 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 - CloudFront + API Gateway REST/WebSocket + S3の連携の構築
 - AWSインフラのCloudFormationによるコード化
 
-【発揮したバリュー】CloudFront + API Gateway WebSocket + S3の構築例の情報が少なかったが、AWS公式ドキュメントを地道に調査し課題を解決。AWSマネージドサービスの幅広い知識とフロントエンド、バックエンドの開発経験を生かし、運用コストを抑えたアプリケーション開発に成功。また短期間での開発要望に応え、開発リードタイムの短縮によってクライアントのサービスの付加価値を高めることに貢献。
+【発揮したバリュー】CloudFront + API Gateway WebSocket + S3の構築例の情報が少なかったが、AWS公式ドキュメントを地道に調査し課題を解決。AWSマネージドサービスの幅広い知識とフロントエンド、バックエンドの開発経験を生かし、運用コストを抑えたサーバレスアプリケーション開発に成功。また短期間での開発要望に応え、開発リードタイムの短縮によってクライアントのサービスの付加価値を高めることに貢献。
 
 ### CDN調査【CloudFront/S3】
 【プロジェクト概要】CDNのキャッシュや圧縮に関する設定を最適化して高速化を行うための調査(2022年)
