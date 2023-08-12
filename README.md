@@ -69,6 +69,7 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 ## 主な業務経歴
 
 ### 不動産情報検索システムのプロトタイプ開発【React/Express/Fargate/CloudFormation/AWS】(2023年〜現在)
+
 【プロジェクト概要】不動産情報検索のWebアプリケーションのプロトタイプ開発とAWSによる基盤構築
 
 【担当業務】各種Webサービスのインフラの設計構築を担当。具体的には下記。
@@ -89,8 +90,9 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 
 【発揮したバリュー】要件定義、詳細設計を行いクラウドアーキテクチャ設計を行ったO->1フェーズに貢献。フロントエンドとバックエンドの豊富な開発経験によるSPA構成のアプリケーションの雛形を作成してアプリケーション開発にも貢献。インフラのコード化、CI/CDパイプラインの構築など、作業フローの効率化と各種自動化作業等に大きく貢献。
 
-### 接続テストページのプロトタイプ開発【JavaScript/AWS】
-【プロジェクト概要】利用者の接続環境に問題ないかを診断するための自動テストを行うWebアプリケーションの開発(2022年)
+### 接続テストページのプロトタイプ開発【JavaScript/AWS】(2022年)
+
+【プロジェクト概要】利用者の接続環境に問題ないかを診断するための自動テストを行うWebアプリケーションの開発
 
 【担当業務】診断項目の調査、フロントエンド自動テストページの作成、AWSインフラの構築、インフラ構築手順書の作成とインフラのコード化。具体的には下記。
 
@@ -102,8 +104,9 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 
 【発揮したバリュー】CloudFront + API Gateway WebSocket + S3の構築例の情報が少なかったが、AWS公式ドキュメントを地道に調査し課題を解決。AWSマネージドサービスの幅広い知識とフロントエンド、バックエンドの開発経験を生かし、運用コストを抑えたサーバレスアプリケーション開発に成功。また短期間での開発要望に応え、開発リードタイムの短縮によってクライアントのサービスの付加価値を高めることに貢献。
 
-### CDN調査【CloudFront/S3】
-【プロジェクト概要】CDNのキャッシュや圧縮に関する設定を最適化して高速化を行うための調査(2022年)
+### CDN調査【CloudFront/S3】(2022年)
+
+【プロジェクト概要】CDNのキャッシュや圧縮に関する設定を最適化して高速化を行うための調査
 
 【担当業務】CloudFrontキャッシュヒット率の向上の調査、圧縮形式GzipとBrotliの比較調査、プロトコルHTTP/2とHTTP/3の比較調査。具体的には下記。
 
@@ -114,8 +117,9 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 
 【発揮したバリュー】利用が想定される帯域幅を検証環境で作り、実際の利用時のダウンロード時間を再現し計測。圧縮率が大きかったBrotliの方がレスポンスタイムが高速になることや接続タイムがHTTP/3の方が高速になることも検証結果から確認。キャッシュヒット率の向上のため行ったパスパターンの的確な設定はCloudFrontキャッシュ最適化に貢献。
 
-### EdTechサービスWebアプリケーション開発【Rails/JavaScript】
-【プロジェクト概要】EdTechサービスのRailsによるバックエンドシステムの機能改善(2022年)
+### EdTechサービスWebアプリケーション開発【Rails/JavaScript】(2022年)
+
+【プロジェクト概要】EdTechサービスのRailsによるバックエンドシステムの機能改善
 
 【担当業務】UIの改善、ビジネスロジックの作成、要件定義、詳細設計、実装、テスト、コードレビュー。具体的には下記。
 
@@ -124,9 +128,9 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 
 【発揮したバリュー】自動計算のモジュールを作成し機能改善に貢献。
 
-### 高負荷Webサービスの負荷試験、性能試験【JMeter/BeanShell/Terraform/AWS】
+### 高負荷Webサービスの負荷試験、性能試験【JMeter/BeanShell/Terraform/AWS】(2022年)
 
-【プロジェクト概要】高負荷Webサービスの品質管理チームにおいて、JMeterを使用したシナリオ作成と負荷試験、性能試験の計測(2022年)
+【プロジェクト概要】高負荷Webサービスの品質管理チームにおいて、JMeterを使用したシナリオ作成と負荷試験、性能試験の計測
 
 【担当業務】JMeterシナリオ作成、AWS上にJMeterを使った負荷試験環境の構築、JMeterの計測結果の分析。具体的には下記。
 
@@ -139,9 +143,9 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 【発揮したバリュー】JMeterは初体験でありJavaから派生したBeanShellスクリプトを使ったシナリオ作成の情報も少なかったが、書籍やネット情報を地道に調査し、さらにJavaの開発経験を活かして素早く作成方法を習得。計測結果のグラフから機能の改善点が判明し、作業方針の策定に貢献。
 
 
-### 学校一斉メールWebアプリケーションの開発【Rails/React/TypeScript/Terraform/AWS】
+### 学校一斉メールWebアプリケーションの開発【Rails/React/TypeScript/Terraform/AWS】(2021年)
 
-【プロジェクト概要】学校から生徒の保護者へ連絡する一斉メールWebアプリケーションのプロトタイプ開発(2021年)
+【プロジェクト概要】学校から生徒の保護者へ連絡する一斉メールWebアプリケーションのプロトタイプ開発
 
 【担当業務】UIデザインのメンテナンスコストの削減。サービス全体のアーキテクチャ設計、Terraformによるインフラのコード化、各種デプロイスクリプトの作成。具体的には下記。
 
@@ -156,9 +160,9 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 【発揮したバリュー】自らクライアントへ営業を行い、プロトタイプの導入を行う。様々な情報を参考にしてコモディティ化されたマルチAZの構成で可用性を高める冗長化を実現。
 
 
-### Gmailで受信したメール処理の自動化【Google Apps Script】
+### Gmailで受信したメール処理の自動化【Google Apps Script】(2020年)
 
-【プロジェクト概要】生徒の保護者からのメールへ自動返信するスクリプトの開発(2020年)
+【プロジェクト概要】生徒の保護者からのメールへ自動返信するスクリプトの開発
 
 【担当業務】メールの自動処理を行うスクリプトの実装。具体的には下記。
 
@@ -169,9 +173,9 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 【発揮したバリュー】自らクライアントへ営業を行い、プロトタイプの導入を行う。クライアントが手動で行っていた業務を自動化することで業務の効率化を実現。
 
 
-### 通知アプリ管理画面の改修【WordPress/Firebase】
+### 通知アプリ管理画面の改修【WordPress/Firebase】(2020年)
 
-【プロジェクト概要】学校から生徒の保護者へ通知するアプリの管理画面のUI改善と機能追加(2020年)
+【プロジェクト概要】学校から生徒の保護者へ通知するアプリの管理画面のUI改善と機能追加
 
 【担当業務】UIの改善、追加機能の要件定義、詳細設計、実装。具体的には下記。
 
@@ -180,9 +184,9 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 - WordPress + Firebase（Cloud Messaging、Auth、Realtime Database） 連携による通知機能の実装
 
 
-### 学校一斉通知アプリの新規開発【Xamarin】
+### 学校一斉通知アプリの新規開発【Xamarin】(2020年)
 
-【プロジェクト概要】学校から生徒の保護者へ通知するアプリのプロトタイプ開発(2020年)
+【プロジェクト概要】学校から生徒の保護者へ通知するアプリのプロトタイプ開発
 
 【担当業務】要件定義、詳細設計、実装。具体的には下記。
 
@@ -190,9 +194,9 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 - Firebase（Auth、Firestore）連携による通知機能の実装
 
 
-### 学校一斉メールWindowsデスクトップアプリの新規開発【C#/.NET】
+### 学校一斉メールWindowsデスクトップアプリの新規開発【C#/.NET】(2019年)
 
-【プロジェクト概要】学校から生徒の保護者へ連絡する一斉メールWindowsデスクトップアプリのプロトタイプ開発(2019年)
+【プロジェクト概要】学校から生徒の保護者へ連絡する一斉メールWindowsデスクトップアプリのプロトタイプ開発
 
 【担当業務】要件定義、詳細設計、実装、ユニットテスト、運用マニュアルの作成。具体的には下記。
 
@@ -201,9 +205,9 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 - 運用マニュアルのドキュメント作成
 
 
-### Web制作会社コーポレイトサイトの制作【WordPress】
+### Web制作会社コーポレイトサイトの制作【WordPress】(2018年)
 
-【プロジェクト概要】WordPressテーマのカスタマイズによるWebサイト制作(2018年)
+【プロジェクト概要】WordPressテーマのカスタマイズによるWebサイト制作
 
 【担当業務】要件定義、プロジェクト管理、テスト。具体的には下記。
 
@@ -214,9 +218,9 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 - 統合テスト
 
 
-### 起業家&投資家マッチングWebアプリケーションの個人開発【WordPress/AWS】
+### 起業家&投資家マッチングWebアプリケーションの個人開発【WordPress/AWS】(2017年)
 
-【プロジェクト概要】AWSを利用した起業家&投資家マッチングサイトのWebアプリケーション開発(2017年)
+【プロジェクト概要】AWSを利用した起業家&投資家マッチングサイトのWebアプリケーション開発
 
 【担当業務】事業企画、要件定義、詳細設計、実装、UI設計、AWS構築とデプロイ作業、運用。具体的には下記。
 
@@ -226,9 +230,9 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 - AWSでの運用（運用期間3ヶ月）
 
 
-### 学校ホームページの改修【WordPress】
+### 学校ホームページの改修【WordPress】(2017年)
 
-【プロジェクト概要】WordPress導入による学校ホームページ更新の効率化(2017年)
+【プロジェクト概要】WordPress導入による学校ホームページ更新の効率化
 
 【担当業務】改修案の作成、要件定義、詳細設計、実装、UI設計、操作マニュアル作成。具体的には下記。
 
@@ -238,9 +242,9 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 - WordPress管理画面捜査の説明とマニュアル化
 
 
-### 小売業商品発注システムAndroidアプリのプロトタイプ開発【Android/Java】
+### 小売業商品発注システムAndroidアプリのプロトタイプ開発【Android/Java】(2016年)
 
-【プロジェクト概要】小売業にBYOD導入実施を行うための商品発注モバイルアプリのプロトタイプ開発(2016年)
+【プロジェクト概要】小売業にBYOD導入実施を行うための商品発注モバイルアプリのプロトタイプ開発
 
 【担当業務】アプリ導入の提案書作成、要件定義、詳細設計、実装、UI設計。具体的には下記。
 
@@ -249,9 +253,9 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 - Filebase（Auth、Realtime Database）のMBaaS/BaaSを利用したデータベースを構築
 
 
-### 料理動画学習Webアプリケーションの個人開発【Linux CentOS/Ruby on Rails/Git/Vagrant】
+### 料理動画学習Webアプリケーションの個人開発【Linux CentOS/Ruby on Rails/Git/Vagrant】(2015年)
 
-【プロジェクト概要】Ruby on Railsを利用した料理動画Webアプリケーション開発(2015年)
+【プロジェクト概要】Ruby on Railsを利用した料理動画Webアプリケーション開発
 
 【担当業務】事業企画、要件定義、詳細設計、実装、UI設計、CI/CD導入、運用、コンテンツ制作。具体的には下記。
 
@@ -262,9 +266,9 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 - 料理動画のコンテンツ制作
 
 
-### 語学学習アプリの個人開発【Android/Java】
+### 語学学習アプリの個人開発【Android/Java】(2012年)
 
-【プロジェクト概要】語学学習Androidアプリ開発(2012年)
+【プロジェクト概要】語学学習Androidアプリ開発
 
 【担当業務】要件定義、詳細設計、実装、UI設計、運用、AdMobの導入。具体的には下記。
 
