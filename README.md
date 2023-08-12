@@ -12,6 +12,8 @@
 
 ## 概要
 
+- クラウドアーキテクチャ設計、クラウドインフラ構築管理、基盤コード開発、DevOpsが現在の専門です。
+
 - バックエンドの複数の言語/DB/フレームワークを用いた開発経験、AWSの多数のマネージドサービスの開発経験があります。（フロントエンド開発、Androidアプリ開発、Windows系では.NET系の開発も多数経験しておりますが現在はLinuxプラットフォームでの開発がメインです）
 
 - 小規模〜中規模サービスの新規開発フェーズを多く経験してきました。サービスのアーキテクチャ設計の段階から参画させて頂くことでバリューを発揮できるエンジニアだと思います。
@@ -20,7 +22,7 @@
 基本的にすべて実業務で使用した技術だけを列挙しています。
 
 ### 言語
-Java | Ruby | Python | PHP | Perl | JavaScript | TypeScript | VC++ | C# | Google Apps Script
+Go | Java | Ruby | Python | PHP | Perl | JavaScript | TypeScript | VC++ | C# | Google Apps Script
 
 ### フレームワーク等
 Express | Struts | Ruby on Rails | CakePHP | jQuery | React.js | MFC | .NET Framework | RSpec
@@ -32,7 +34,7 @@ MySQL | PostgreSQL | Oracle | SQL Server | DynamoDB
 
 #### AWS
 
-VPC | S3 | CloudFront | API Gateway | Lambda | ELB | ECR | CodeBuild | CodePipline | EC2 | ECS | Fargate | Route53 | ACM | IAM | RDS(MySQL) | DynamoDB | Kinesis firehose | SES | KMS | SSM | CloudFormation
+VPC | S3 | CloudFront | API Gateway | Lambda | ELB | ECR | CodeCommit | CodeBuild | CodeDeploy | CodePipline | EC2 | ECS | Fargate | Route53 | ACM | IAM | RDS(MySQL|PostgreSQL) | DynamoDB | Kinesis firehose | SES | KMS | Parameter Store | CloudFormation | OpenSearch | Cognito | SNS | CloudWatch | EventBridge | Step Functions | Glue | VPC Endpoint
 
 #### Firebase
 
@@ -47,15 +49,45 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 ## バリューを発揮しやすい業務
 
 - クラウドアーキテクチャ設計
+- クラウドインフラ構築管理
+- 基盤コード開発
+- パッケージマネージャの導入
+- LinterやFormatterの導入
+- アプリケーションのマイクロサービス化
 - サーバーレスアーキテクチャの導入
+- 認証サービスの導入
 - CDNの導入
 - CIサービスの導入
 - デプロイの自動化
 - コンテナ化(Docker化)
 - インフラのコード化
 - 負荷試験シナリオ作成
+- イベント駆動型アプリケーションの構築
+- クラウドの権限管理
+- ログ収集の構築
 
 ## 主な業務経歴
+
+### 不動産情報検索システムのプロトタイプ開発【React/Express/Fargate/CloudFormation/AWS】(2023年〜現在)
+【プロジェクト概要】不動産情報検索のWebアプリケーションのプロトタイプ開発とAWSによる基盤構築
+
+【担当業務】各種Webサービスのインフラの設計構築を担当。具体的には下記。
+
+- クライアントからのヒアリングを行いインフラに関係する要件定義、基本設計、詳細設計、AWS構成図を作成する上流工程担当。AWS構成図を元にAWSの月のコストを算出し、AWS関連の見積書を作成。
+- CloudFormationによるインフラのコード化(VPC/Fargate/RDS/ELB/Cognito/WAF/CodePipeline/CodeDeploy等)。可読性の向上やエラーの特定が容易になるように、またリソースの変更やアップデートを行いたい場合に柔軟に対応できるようリソースごとにテンプレートを作成。デプロイメントの順序やテンプレート間の関連性を正確に把握し、パラメーター設定を適切に行うことで複数のテンプレート間でのリソースの相互依存性の問題を解決。
+- cfn-lintによるAWS CloudFormationテンプレートの静的解析を行なった実装。
+- CodeCommit/CodeDeploy/CodePipelineによるCI/CDパイプラインの構築。buildspec.ymlを作成。buildspec.ymlへは環境変数をParameter Storeから取得できるようにIAMの適切な設定を行う。
+- Dockerとdocker-composeの導入によるローカル開発環境構築の迅速化。専用のベースイメージの作成によるDRY化/ローカル開発用と本番用Dockerイメージの切り分け/Cache Mountの活用による不要なnpmパッケージビルドの省略化。
+- 運用ドメインの取得。Route53のホストゾーンの設定とサブドメインのDNS設定。
+- Amazon ACMによるSSL/TLS証明書の取得。ACMへサブドメインを登録し、サブドメインへHTTPSプロトコルによるアクセスを実現。
+- Amazon Cognitoを導入。CognitoカスタムドメインをACMへ設定、ALBとの連携。カスタムドメインによるユーザーのサインイン機能を追加し、Webおよびモバイルアプリケーションへのアクセスを制御。
+- pgAdminの導入。pgAdminのSSHトンネルを使用してRDS PostgreSQL DBインスタンスに接続するためのEC2ホストの設定。
+- AWS WAFの導入。日本以外からのアクセスを遮断する設定。
+- ECSの異常検出のルールの作成とそのルール基づいたCloudWatchアラームを作成。異常検出時にはSNSによる通知の仕組みを構築。
+- アプリケーション開発の担当ではなかったが、アプリケーション開発の進捗が予定よりも遅れたため、React/ExpressのSPA構成のデモアプリケーションを作成。デモアプリケーションはFargateの動作検証に使用。
+- アプリケーションの検索機能のプロトタイプ開発にも参画。Amazon OpenSearchを使用した日本語のサジェストの機能を実装。
+
+【発揮したバリュー】要件定義、詳細設計を行いクラウドアーキテクチャ設計を行ったO->1フェーズに貢献。フロントエンドとバックエンドの豊富な開発経験によるSPA構成のアプリケーションの雛形を作成してアプリケーション開発にも貢献。インフラのコード化、CI/CDパイプラインの構築など、作業フローの効率化と各種自動化作業等に大きく貢献。
 
 ### 接続テストページのプロトタイプ開発【JavaScript/AWS】
 【プロジェクト概要】利用者の接続環境に問題ないかを診断するための自動テストを行うWebアプリケーションの開発(2022年)
