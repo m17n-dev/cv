@@ -25,7 +25,7 @@
 Go | Java | Ruby | Python | PHP | Perl | JavaScript | TypeScript | VC++ | C# | Google Apps Script
 
 ### フレームワーク等
-Express | Struts | Ruby on Rails | CakePHP | jQuery | React.js | MFC | .NET Framework | RSpec
+Gin | Express | Struts | Ruby on Rails | CakePHP | jQuery | React.js | MFC | .NET Framework | RSpec
 
 ### RDB/NoSQL
 MySQL | PostgreSQL | Oracle | SQL Server | DynamoDB
