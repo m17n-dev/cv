@@ -80,7 +80,7 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 
 【担当業務】各種Webサービスのインフラの設計構築を担当。具体的には下記。
 
-- クライアントからのヒアリングを行いインフラに関係する要件定義、基本設計、詳細設計、AWS構成図を作成する上流工程担当。AWS構成図を元にAWSの月のコストを算出し、AWS関連の見積書を作成。
+- クライアントからヒアリングを行いインフラに関係する要件定義、基本設計、詳細設計、AWS構成図を作成する上流工程担当。AWS構成図を元にAWSの月のコストを算出し、AWS関連の見積書を作成。
 - CloudFormationによるインフラのコード化(VPC/Fargate/RDS/ELB/Cognito/WAF/CodePipeline/CodeDeploy等)。可読性の向上やエラーの特定が容易になるように、またリソースの変更やアップデートを行いたい場合に柔軟に対応できるようリソースごとにテンプレートを作成。デプロイメントの順序やテンプレート間の関連性を正確に把握し、パラメーター設定を適切に行うことで複数のテンプレート間でのリソースの相互依存性の問題を解決。
 - cfn-lintによるAWS CloudFormationテンプレートの静的解析を行なった実装。
 - CodeCommit/CodeDeploy/CodePipelineによるCI/CDパイプラインの構築。buildspec.ymlを作成。buildspec.ymlへは環境変数をParameter Storeから取得できるようにIAMの適切な設定を行う。
