@@ -8,7 +8,7 @@
 |ポートフォリオ|[myrails-react-todo-v4](https://github.com/m17n-dev/myrails-react-todo-v4)(Rails API + React)|
 |ポートフォリオ|[BookSearchWpfApp](https://github.com/m17n-dev/BookSearchWpfApp)(.NET Framework)|
 |Twitter|[@m17n_dev](https://twitter.com/m17n_dev)|
-|Qiita|[@m17n_dev](https://qiita.com/m17n_dev) 
+|Qiita|[@m17n_dev](https://qiita.com/m17n_dev)|
 
 ## 概要
 
@@ -19,15 +19,19 @@
 - 小規模〜中規模サービスの新規開発フェーズを多く経験してきました。サービスのアーキテクチャ設計の段階から参画させて頂くことでバリューを発揮できるエンジニアだと思います。
 
 ## スキル
+
 基本的にすべて実業務で使用した技術だけを列挙しています。
 
 ### 言語
+
 Go | Java | Ruby | Python | PHP | Perl | JavaScript | TypeScript | VC++ | C# | Google Apps Script
 
 ### フレームワーク等
+
 Gin | Express | Struts | Ruby on Rails | CakePHP | jQuery | React.js | MFC | .NET Framework | RSpec
 
 ### RDB/NoSQL
+
 MySQL | PostgreSQL | Oracle | SQL Server | DynamoDB
 
 ### クラウド
@@ -41,9 +45,11 @@ VPC | S3 | CloudFront | API Gateway | Lambda | ELB | ECR | CodeCommit | CodeBuil
 Auth | RealtimeDatabase | Firestore | Cloud Messaging
 
 ### SaaS/PaaS
+
 GitHub | GitLab | CircleCI
 
 ### その他
+
 Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND | DHCP | JMeter
 
 ## バリューを発揮しやすい業務
@@ -142,7 +148,6 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 
 【発揮したバリュー】JMeterは初体験でありJavaから派生したBeanShellスクリプトを使ったシナリオ作成の情報も少なかったが、書籍やネット情報を地道に調査し、さらにJavaの開発経験を活かして素早く作成方法を習得。計測結果のグラフから機能の改善点が判明し、作業方針の策定に貢献。
 
-
 ### 学校一斉メールWebアプリケーションの開発【Rails/React/TypeScript/Terraform/AWS】(2021年)
 
 【プロジェクト概要】学校から生徒の保護者へ連絡する一斉メールWebアプリケーションのプロトタイプ開発
@@ -159,7 +164,6 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 
 【発揮したバリュー】自らクライアントへ営業を行い、プロトタイプの導入を行う。様々な情報を参考にしてコモディティ化されたマルチAZの構成で可用性を高める冗長化を実現。
 
-
 ### Gmailで受信したメール処理の自動化【Google Apps Script】(2020年)
 
 【プロジェクト概要】生徒の保護者からのメールへ自動返信するスクリプトの開発
@@ -172,7 +176,6 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 
 【発揮したバリュー】自らクライアントへ営業を行い、プロトタイプの導入を行う。クライアントが手動で行っていた業務を自動化することで業務の効率化を実現。
 
-
 ### 通知アプリ管理画面の改修【WordPress/Firebase】(2020年)
 
 【プロジェクト概要】学校から生徒の保護者へ通知するアプリの管理画面のUI改善と機能追加
@@ -183,7 +186,6 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 - WordPressプラグインソフトの開発
 - WordPress + Firebase（Cloud Messaging、Auth、Realtime Database） 連携による通知機能の実装
 
-
 ### 学校一斉通知アプリの新規開発【Xamarin】(2020年)
 
 【プロジェクト概要】学校から生徒の保護者へ通知するアプリのプロトタイプ開発
@@ -192,7 +194,6 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 
 - Androidアプリ(Xamarin.Android)の実装
 - Firebase（Auth、Firestore）連携による通知機能の実装
-
 
 ### 学校一斉メールWindowsデスクトップアプリの新規開発【C#/.NET】(2019年)
 
@@ -203,7 +204,6 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 - MVVMモデルによる実装
 - テストツールを利用したテスト駆動開発の実施
 - 運用マニュアルのドキュメント作成
-
 
 ### Web制作会社コーポレイトサイトの制作【WordPress】(2018年)
 
@@ -217,7 +217,6 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 - プロジェクト全体の進捗管理
 - 統合テスト
 
-
 ### 起業家&投資家マッチングWebアプリケーションの個人開発【WordPress/AWS】(2017年)
 
 【プロジェクト概要】AWSを利用した起業家&投資家マッチングサイトのWebアプリケーション開発
@@ -228,7 +227,6 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 - AWSコンソール画面からAWS（EC2、VPC、S3、Lambda、Route53、IAM、RDS(MySQL)、SES）構築
 - EC2へWebアプリケーションをデプロイ
 - AWSでの運用（運用期間3ヶ月）
-
 
 ### 学校ホームページの改修【WordPress】(2017年)
 
@@ -241,7 +239,6 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 - レスポンシブWebデザインへUIを更新
 - WordPress管理画面捜査の説明とマニュアル化
 
-
 ### 小売業商品発注システムAndroidアプリのプロトタイプ開発【Android/Java】(2016年)
 
 【プロジェクト概要】小売業にBYOD導入実施を行うための商品発注モバイルアプリのプロトタイプ開発
@@ -251,7 +248,6 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 - アプリ開発全般
 - 2次元コードの作成／読取のオープンソースZXingの組み込み
 - Filebase（Auth、Realtime Database）のMBaaS/BaaSを利用したデータベースを構築
-
 
 ### 料理動画学習Webアプリケーションの個人開発【Linux CentOS/Ruby on Rails/Git/Vagrant】(2015年)
 
@@ -264,7 +260,6 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 - CentOSへミドルウェア（Apache、Bind、Sendmail、MySQL）を構築
 - CI/CD導入（Vagrant、Chef、Jenkins利用）
 - 料理動画のコンテンツ制作
-
 
 ### 語学学習アプリの個人開発【Android/Java】(2012年)
 
