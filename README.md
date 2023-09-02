@@ -5,6 +5,7 @@
 |key|value|
 |----|----|
 |名前|瀬野 哲朗|
+|活動拠点|東京都 渋谷区|
 |ポートフォリオ|[myrails-react-todo-v4](https://github.com/m17n-dev/myrails-react-todo-v4)(Rails API + React)|
 |ポートフォリオ|[BookSearchWpfApp](https://github.com/m17n-dev/BookSearchWpfApp)(.NET Framework)|
 |Twitter|[@m17n_dev](https://twitter.com/m17n_dev)|
@@ -12,7 +13,7 @@
 
 ## 概要
 
-- クラウドアーキテクチャ設計、クラウドインフラ構築管理、基盤コード開発、DevOpsが現在の専門です。
+- クラウドアーキテクチャ設計、クラウドインフラ構築管理、基盤コード開発、DevOps/MLOpsが現在の専門です。
 
 - バックエンドの複数の言語/DB/フレームワークを用いた開発経験、AWSの多数のマネージドサービスの開発経験があります。（フロントエンド開発、Androidアプリ開発、Windows系では.NET系の開発も多数経験しておりますが現在はLinuxプラットフォームでの開発がメインです）
 
