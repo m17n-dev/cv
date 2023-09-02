@@ -97,7 +97,7 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 
 【発揮したバリュー】要件定義、詳細設計を行いクラウドアーキテクチャ設計を行ったO->1フェーズに貢献。フロントエンドとバックエンドの豊富な開発経験によるSPA構成のアプリケーションの雛形を作成してアプリケーション開発にも貢献。インフラのコード化、CI/CDパイプラインの構築など、作業フローの効率化と各種自動化作業等に大きく貢献。
 
-### AI空調システムの開発と基盤改修【Lambda/Fargate/CloudFormation/AWS】(2023年〜現在)
+### AI空調システムの開発と基盤改修【Lambda/EventBridge/CloudFormation/AWS】(2023年〜現在)
 
 【プロジェクト概要】AI空調システムのアプリケーション開発とAWSの基盤改修
 
