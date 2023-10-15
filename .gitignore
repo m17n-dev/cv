@@ -1,0 +1,56 @@
+# ログファイル
+*.log
+
+# 実行可能ファイルやバイナリファイル
+*.exe
+*.dll
+*.so
+*.out
+
+# テンポラリファイル
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# ビルドディレクトリや生成されるファイル
+/bin/
+/obj/
+/dist/
+/build/
+
+# OS による生成ファイル
+.DS_Store # macOS
+Thumbs.db # Windows
+desktop.ini # Windows
+
+# IDEやエディタによる設定ファイル・キャッシュ
+.vscode/
+.idea/
+*.iml
+*.o
+*.user
+*.suo
+*.bak
+
+# 依存関係のディレクトリ
+node_modules/
+venv/
+__pycache__/
+
+# 環境変数や秘密鍵などのセキュアな情報を含むファイル
+.env
+*.pem
+*.key
+
+# データベースファイル
+*.db
+*.sqlite3
+
+# バックアップファイル
+*.bak
+
+# その他の不要ファイル
+*.retry
+
