@@ -113,14 +113,15 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
   - S3 Object LambdaへのHEAD/GETリクエストの調査
   - CloudFront署名付きURL生成のスクリプト作成
 - S3 Object Lambdaの動作検証
+  - レスポンス最大待ち時間を超えた場合の挙動調査
 - S3 Object Lambda関数の動作検証
-  - write_get_object_responへメタデータの設定調査
+  - write_get_object_responseへメタデータの設定調査
 - バケットポリシーの設定
   - クロスアカウントの制御
 - IAMポリシーの設定
   - クロスアカウントの制御
-- Lambdal関数デプロイメントパッケージの作成
-  - 使用するランタイムバージョン用のライブラリを設定
+- Lambda関数デプロイメントパッケージの作成
+  - 使用するランタイムバージョン用のライブラリを抽出
 
 ### 不動産情報検索システムのプロトタイプ開発【React/Express/Fargate/CloudFormation/AWS】(2023年)
 
