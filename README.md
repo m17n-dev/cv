@@ -2,14 +2,14 @@
 
 ## 基本情報
 
-|key|value|
-|----|----|
-|名前|瀬野 哲朗|
-|活動拠点|東京都 渋谷区|
-|ポートフォリオ|[myrails-react-todo-v4](https://github.com/m17n-dev/myrails-react-todo-v4)(Rails API + React)|
-|ポートフォリオ|[BookSearchWpfApp](https://github.com/m17n-dev/BookSearchWpfApp)(.NET Framework)|
-|Twitter|[@m17n_dev](https://twitter.com/m17n_dev)|
-|Qiita|[@m17n_dev](https://qiita.com/m17n_dev)|
+| key            | value                                                                                         |
+| -------------- | --------------------------------------------------------------------------------------------- |
+| 名前           | 瀬野 哲朗                                                                                     |
+| 活動拠点       | 東京都                                                                                        |
+| ポートフォリオ | [myrails-react-todo-v4](https://github.com/m17n-dev/myrails-react-todo-v4)(Rails API + React) |
+| ポートフォリオ | [BookSearchWpfApp](https://github.com/m17n-dev/BookSearchWpfApp)(.NET Framework)              |
+| Twitter        | [@m17n_dev](https://twitter.com/m17n_dev)                                                     |
+| Qiita          | [@m17n_dev](https://qiita.com/m17n_dev)                                                       |
 
 ## 概要
 
@@ -39,7 +39,7 @@ MySQL | PostgreSQL | Oracle | SQL Server | DynamoDB
 
 #### AWS
 
-VPC | S3 | CloudFront | API Gateway | Lambda | ELB | ECR | CodeCommit | CodeBuild | CodeDeploy | CodePipline | EC2 | ECS | Fargate | Route53 | ACM | IAM | RDS(MySQL|PostgreSQL) | DynamoDB | Kinesis firehose | SES | KMS | Parameter Store | CloudFormation | OpenSearch | Cognito | SNS | CloudWatch | EventBridge | Step Functions | Glue | VPC Endpoint
+VPC | S3 | CloudFront| CloudFront functions | API Gateway | Lambda | S3 Object Lambda | ELB | ECR | CodeCommit | CodeBuild | CodeDeploy | CodePipline | EC2 | ECS | Fargate | Route53 | ACM | IAM | RDS(MySQL|PostgreSQL) | DynamoDB | Kinesis firehose | SES | KMS | Parameter Store | CloudFormation | OpenSearch | Cognito | SNS | CloudWatch | EventBridge | Step Functions | Glue | VPC Endpoint
 
 #### Firebase
 
@@ -75,7 +75,54 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 
 ## 主な業務経歴
 
-### 不動産情報検索システムのプロトタイプ開発【React/Express/Fargate/CloudFormation/AWS】(2023年〜現在)
+### エンタメ向けアプリケーション開発【Python/JavaScript/CloudFront/S3 Object Lambda/CloudFormation/AWS】(2023年〜現在)
+
+【プロジェクト概要】コンテンツダウンロードアプリケーション開発とAWSによる基盤構築
+
+【担当業務】アプリケーション開発とインフラの設計構築を担当。具体的には下記。
+
+- AWS構成図作成
+  - 最新のアイコンを使用したPower PointによるAWS構成図の作成
+- AWS関連の見積書作成
+  - AWSコスト計算スクリプト作成
+- 設計書作成
+  - シーケンス図作成
+- API仕様書作成
+  - OSA（OpenAPI Specification）を利用したAPI仕様書作成
+  - Redoclyツールを使用
+- 開発環境構築のドキュメント作成
+  - 開発言語の選定
+  - Linter/Formatterの導入
+  - VSCode拡張機能の設定
+- AtomicParsleyのカスタムバイナリの作成
+  - Amazon Linux 2023用のカスタムバイナリの作成
+- CloudFormationによるインフラのコード化
+  - アーキテクチャーの設計
+- S3 Object Lambdaを使用したPythonによるアプリケーションの実装
+  - HEADリクエスト処理
+  - GETリクエスト処理
+  - AtomicParsleyによる処理
+  - 暗号化処理
+  - write_get_object_response処理
+- CloudFront関数の実装
+  - リクエストパスの組み替え
+- CloudFront動作検証
+  - リクエストの折りたたみ機能の調査
+  - Range GETリクエストの折りたたみ機能の調査
+  - カスタムエラーレスポンスの設定調査
+  - S3 Object LambdaへのHEAD/GETリクエストの調査
+  - CloudFront署名付きURL生成のスクリプト作成
+- S3 Object Lambdaの動作検証
+- S3 Object Lambda関数の動作検証
+  - write_get_object_responへメタデータの設定調査
+- バケットポリシーの設定
+  - クロスアカウントの制御
+- IAMポリシーの設定
+  - クロスアカウントの制御
+- Lambdal関数デプロイメントパッケージの作成
+  - 使用するランタイムバージョン用のライブラリを設定
+
+### 不動産情報検索システムのプロトタイプ開発【React/Express/Fargate/CloudFormation/AWS】(2023年)
 
 【プロジェクト概要】不動産情報検索のWebアプリケーションのプロトタイプ開発とAWSによる基盤構築
 

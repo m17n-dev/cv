@@ -54,3 +54,5 @@ __pycache__/
 # その他の不要ファイル
 *.retry
 
+package.json
+package-lock.json
