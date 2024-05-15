@@ -47,7 +47,7 @@ Auth | RealtimeDatabase | Firestore | Cloud Messaging
 
 ### SaaS/PaaS
 
-GitHub | GitLab | CircleCI
+GitHub | GitHub Actions | GitLab | CircleCI
 
 ### その他
 
@@ -97,13 +97,19 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 - AtomicParsleyのカスタムバイナリの作成
   - Amazon Linux 2023用のカスタムバイナリの作成
 - CloudFormationによるインフラのコード化
-  - アーキテクチャーの設計
+  - AWSのアーキテクチャーの設計
 - S3 Object Lambdaを使用したPythonによるアプリケーションの実装
   - HEADリクエスト処理
   - GETリクエスト処理
   - AtomicParsleyによる処理
   - 暗号化処理
   - write_get_object_response処理
+- S3 Object Lambdaの動作検証
+  - レスポンス最大待ち時間を超えた場合の挙動調査
+- S3 Object Lambda関数の動作検証
+  - write_get_object_responseへメタデータの設定調査
+- Lambda関数デプロイメントパッケージの作成
+  - 使用するランタイムバージョン用のライブラリを抽出
 - CloudFront関数の実装
   - リクエストパスの組み替え
 - CloudFront動作検証
@@ -112,16 +118,18 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
   - カスタムエラーレスポンスの設定調査
   - S3 Object LambdaへのHEAD/GETリクエストの調査
   - CloudFront署名付きURL生成のスクリプト作成
-- S3 Object Lambdaの動作検証
-  - レスポンス最大待ち時間を超えた場合の挙動調査
-- S3 Object Lambda関数の動作検証
-  - write_get_object_responseへメタデータの設定調査
 - バケットポリシーの設定
   - クロスアカウントの制御
 - IAMポリシーの設定
   - クロスアカウントの制御
-- Lambda関数デプロイメントパッケージの作成
-  - 使用するランタイムバージョン用のライブラリを抽出
+- テスト
+  - 単体テスト
+    - pytestによるシナリオ作成
+  - システムテスト
+    - pytestによるシナリオ作成
+      - requestsによるHTTPリクエストのテスト
+- CI/CD構築
+  - GitHub ActionsによるCI作成
 
 ### 不動産情報検索システムのプロトタイプ開発【React/Express/Fargate/CloudFormation/AWS】(2023年)
 
