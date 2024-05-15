@@ -110,6 +110,8 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
   - write_get_object_responseへメタデータの設定調査
 - Lambda関数デプロイメントパッケージの作成
   - 使用するランタイムバージョン用のライブラリを抽出
+- Lambda関数のBlue/Greenデプロイメント
+  - CloudFormationによるコード化
 - CloudFront関数の実装
   - リクエストパスの組み替え
 - CloudFront動作検証
@@ -129,6 +131,7 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
     - pytestによるシナリオ作成
       - requestsによるHTTPリクエストのテスト
 - CI/CD構築
+  - デプロイメントフロー作成
   - GitHub ActionsによるCI作成
 
 ### 不動産情報検索システムのプロトタイプ開発【React/Express/Fargate/CloudFormation/AWS】(2023年)
