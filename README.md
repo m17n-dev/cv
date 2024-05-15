@@ -75,7 +75,7 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 
 ## 主な業務経歴
 
-### エンタメ向けアプリケーション開発【Python/JavaScript/CloudFront/S3 Object Lambda/CloudFormation/AWS】(2023年〜現在)
+### エンタメ向けアプリケーション開発【Python/JavaScript/CloudFront/S3 Object Lambda/CloudFormation/AWS】(2023年〜2024年)
 
 【プロジェクト概要】コンテンツダウンロードアプリケーション開発とAWSによる基盤構築
 
