@@ -33,13 +33,13 @@ Gin | Express | Struts | Ruby on Rails | CakePHP | jQuery | React.js | MFC | .NE
 
 ### RDB/NoSQL
 
-MySQL | PostgreSQL | Oracle | SQL Server | DynamoDB
+MySQL | PostgreSQL | Oracle | SQL Server | DynamoDB | DocumentDB
 
 ### クラウド
 
 #### AWS
 
-VPC | S3 | CloudFront| CloudFront functions | API Gateway | Lambda | S3 Object Lambda | ELB | ECR | CodeCommit | CodeBuild | CodeDeploy | CodePipline | EC2 | ECS | Fargate | Route53 | ACM | IAM | RDS(MySQL|PostgreSQL) | DynamoDB | Kinesis firehose | SES | KMS | Parameter Store | CloudFormation | OpenSearch | Cognito | SNS | CloudWatch | EventBridge | Step Functions | Glue | VPC Endpoint
+VPC | S3 | CloudFront| CloudFront functions | API Gateway | Lambda | S3 Object Lambda | ELB | ECR | CodeCommit | CodeBuild | CodeDeploy | CodePipline | EC2 | ECS | Fargate | Route53 | ACM | IAM | RDS(MySQL|PostgreSQL) | DynamoDB | DocumentDB | Kinesis firehose | SES | KMS | Parameter Store | CloudFormation | OpenSearch | Cognito | SNS | CloudWatch | EventBridge | Step Functions | Glue | VPC Endpoint | Elastic Beanstalk
 
 #### Firebase
 
@@ -74,6 +74,31 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 - ログ収集の構築
 
 ## 主な業務経歴
+
+### 建設企業向けアプリケーションパッケージ開発【Terraform/JavaScript/Python/AWS】(2024年〜現在)
+
+【プロジェクト概要】VRアプリケーションパッケージの開発
+
+【担当業務】SREチームに所属しアプリケーション開発とインフラの設計構築を担当。具体的には下記。
+
+- AWS構成図作成
+  - 最新のアイコンを使用したPower PointによるAWS構成図の作成
+- AWSアーキテクチャの設計
+  - CloudFront + ALB + ECS/Batch + S3
+  - CloudFront + Lambda Function URLs
+  - CloudFront + S3
+  - API Gateway + Lambda + DocumnetDB
+  - CloudWatch + EventBridge
+- CI/CD
+  - GitHub ActionsによるCI/CDの設計
+    - Lambda関数のデプロイフローの設計
+- TerraformによるAWSインフラのコード化
+  - dev、stg、prd等の複数環境構築
+- Slack通知アプリの開発
+
+  - Elastic Beanstalkアプリケーションの標準ログに基づくトリガーエラーを通知するため、CloudWatchとEventBridgeを連携によるSlackへ通知するアプリの開発
+
+  現在複数のプロジェクトへ参加中...
 
 ### エンタメ向けアプリケーション開発【Python/JavaScript/CloudFront/S3 Object Lambda/CloudFormation/AWS】(2023年〜2024年)
 
