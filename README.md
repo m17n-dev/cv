@@ -134,6 +134,8 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
   - デプロイメントフロー作成
   - GitHub ActionsによるCI作成
 
+【発揮したバリュー】AWS基盤の構築に関する豊富な知識を活かし、開発からインフラ設計、ドキュメント作成まで一貫して担当。特に、AtomicParsleyのカスタムバイナリを作成し、Amazon Linux 2023用に最適化することで、パフォーマンスの向上を実現。また、S3 Object LambdaとPythonを使用して暗号化処理やメタデータ設定の実装を行い、システムのセキュリティと効率性を向上。さらに、CloudFront関数やLambda関数のBlue/Greenデプロイメントを用いた安全なリリースを行い、安定したサービス提供を支える。加えて、見積書や設計書、API仕様書の作成、CI/CDの構築など、開発チームが円滑に作業を進められるよう、多角的にサポート。これにより、プロジェクト全体の効率化と品質向上に大きく貢献。
+
 ### 不動産情報検索システムのプロトタイプ開発【React/Express/Fargate/CloudFormation/AWS】(2023年)
 
 【プロジェクト概要】不動産情報検索のWebアプリケーションのプロトタイプ開発とAWSによる基盤構築
