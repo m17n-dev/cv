@@ -13,9 +13,9 @@
 
 ## 概要
 
-- クラウドアーキテクチャ設計、クラウドインフラ構築管理、基盤コード開発、DevOps/MLOpsが現在の専門です。
+- クラウドアーキテクチャ設計、クラウドインフラ構築管理、基盤コード開発、DevOps/MLOps が現在の専門です。
 
-- バックエンドの複数の言語/DB/フレームワークを用いた開発経験、AWSの多数のマネージドサービスの開発経験があります。（フロントエンド開発、Androidアプリ開発、Windows系では.NET系の開発も多数経験しておりますが現在はLinuxプラットフォームでの開発がメインです）
+- バックエンドの複数の言語/DB/フレームワークを用いた開発経験、AWS、Google Cloud の多数のマネージドサービスの開発経験があります。（フロントエンド開発、 Android アプリ開発、Windows 系では .NET 系の開発も多数経験しておりますが現在は Linux プラットフォームでの開発がメインです）
 
 - 小規模〜中規模サービスの新規開発フェーズを多く経験してきました。サービスのアーキテクチャ設計の段階から参画させて頂くことでバリューを発揮できるエンジニアだと思います。
 
@@ -39,11 +39,11 @@ MySQL | PostgreSQL | Oracle | SQL Server | DynamoDB | DocumentDB
 
 #### AWS
 
-VPC | S3 | CloudFront| CloudFront functions | API Gateway | Lambda | S3 Object Lambda | ELB | ECR | CodeCommit | CodeBuild | CodeDeploy | CodePipline | EC2 | ECS | Fargate | Route53 | ACM | IAM | RDS(MySQL|PostgreSQL) | DynamoDB | DocumentDB | Kinesis firehose | SES | KMS | Parameter Store | CloudFormation | OpenSearch | Cognito | SNS | CloudWatch | EventBridge | Step Functions | Glue | VPC Endpoint | Elastic Beanstalk
+VPC | S3 | CloudFront| CloudFront functions | API Gateway | Lambda | S3 Object Lambda | ELB | ECR | CodeCommit | CodeBuild | CodeDeploy | CodePipline | EC2 | ECS | Fargate | Route53 | ACM | IAM | RDS(MySQL|PostgreSQL|Limitless Database) | DynamoDB | DocumentDB | Kinesis firehose | SES | KMS | Parameter Store | CloudFormation | OpenSearch | Cognito | SNS | CloudWatch | EventBridge | Step Functions | Glue | VPC Endpoint | Elastic Beanstalk
 
-#### Firebase
+#### Google Cloud
 
-Auth | RealtimeDatabase | Firestore | Cloud Messaging
+Cloud Storage | Cloud Functions | Cloud Run | IAM | Cloud Pub/Sub | Cloud Source Repository | Firebase (Auth|RealtimeDatabase|Firestore|Cloud Messaging)
 
 ### SaaS/PaaS
 
@@ -77,28 +77,31 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 
 ### 建設企業向けアプリケーションパッケージ開発【Terraform/JavaScript/Python/AWS】(2024年〜現在)
 
-【プロジェクト概要】VRアプリケーションパッケージの開発
+【プロジェクト概要】建設企業向けのVRアプリケーションパッケージの開発
 
-【担当業務】SREチームに所属しアプリケーション開発とインフラの設計構築を担当。具体的には下記。
+【担当業務】SRE チームに所属し、Terraform による既存 AWS 環境のコード化、インフラ設計・構築・最適化を担当。開発チームとも密に連携し、開発の意図を理解した上で、アーキテクチャの最適化や AWS 新サービスの導入を推進。加えて、E2E テストの導入など、安定した運用と効率的な開発体制の構築に幅広く貢献。具体的には下記。
 
-- AWS構成図作成
-  - 最新のアイコンを使用したPower PointによるAWS構成図の作成
-- AWSアーキテクチャの設計
-  - CloudFront + ALB + ECS/Batch + S3
-  - CloudFront + Lambda Function URLs
-  - CloudFront + S3
-  - API Gateway + Lambda + DocumnetDB
-  - CloudWatch + EventBridge
-- CI/CD
-  - GitHub ActionsによるCI/CDの設計
-    - Lambda関数のデプロイフローの設計
-- TerraformによるAWSインフラのコード化
-  - dev、stg、prd等の複数環境構築
-- Slack通知アプリの開発
+- AWS インフラ構築・最適化
+  - DEV、STG、PROD 環境の構築と Terraform によるコード化
+  - CloudFront 証明付き URL と VPC オリジン(ALB)の導入によるセキュリティ・性能向上
+  - Route 53 プライベートホストゾーン設定による ECS/BATCH 間通信の最適化
+  - RDS Proxy 導入によるコネクション管理最適化、Aurora スケーリングの検証
+  - AWS 構成図作成、アーキテクチャ提案
+  - Lambda トークン認証機能の導入
+- Slack 通知アプリの開発
+  - EventBridge + CloudWatch Logs + Slack の構成による API 監視通知アプリを設計・実装
+- Amazon Aurora PostgreSQL Limitless Database 導入検証
+  - コスト評価・移行手順のドキュメント化
+  - リリース初期のサービスでありながら、実践的な導入検証を主導
+- ログ・監視基盤の構築
+  - OpenSearch による Centralized Logging の構築
+  - CloudWatch Logs から OpenSearch へのクロスアカウントログ統合、可視化
+  - Nginx Access Log のカスタマイズと CloudWatch 連携による障害特定の迅速化
+- Playwright による E2E テストの導入
+  - アプリケーションの品質担保のため E2E 自動テストを提案・実装、Playwright により構築
+  - 手動テスト負荷を軽減し、品質管理体制の効率化を実現
 
-  - Elastic Beanstalkアプリケーションの標準ログに基づくトリガーエラーを通知するため、CloudWatchとEventBridgeを連携によるSlackへ通知するアプリの開発
-
-  現在複数のプロジェクトへ参加中...
+【発揮したバリュー】AWS インフラの構築・運用、既存環境のコード化、最新データベースの検証、E2E テストの導入 など、SRE としての業務を担当。本プロジェクトでは SRE チームに所属しながらも、開発側とも積極的にコミュニケーションを取り、開発の意図を深く理解した上で、適切なインフラ設計・最適化を実施。Aurora PostgreSQL Limitless など新サービスを即時キャッチアップ・検証し、移行検討資料を作成。また、期日内での環境構築、新規 AWS サービスの迅速な導入、既存環境のコード化による管理負荷削減、E2E テストの導入のよる手動テストの負担軽減など、インフラの安定化と運用効率向上に大きく貢献。
 
 ### エンタメ向けアプリケーション開発【Python/JavaScript/CloudFront/S3 Object Lambda/CloudFormation/AWS】(2023年〜2024年)
 
