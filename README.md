@@ -75,7 +75,7 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 
 ## 主な業務経歴
 
-### 建設企業向けアプリケーションパッケージ開発【Terraform/JavaScript/Python/AWS】(2024年〜現在)
+### 建設企業向けアプリケーションパッケージ開発【Terraform/JavaScript/TypeScript/AWS/Google Cloud】(2024年〜現在)
 
 【プロジェクト概要】建設企業向けのVRアプリケーションパッケージの開発
 
