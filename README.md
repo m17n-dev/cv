@@ -39,7 +39,7 @@ MySQL | PostgreSQL | Oracle | SQL Server | DynamoDB | DocumentDB
 
 #### AWS
 
-VPC | S3 | CloudFront| CloudFront functions | API Gateway | Lambda | S3 Object Lambda | ELB | ECR | CodeCommit | CodeBuild | CodeDeploy | CodePipline | EC2 | ECS | Fargate | Route53 | ACM | IAM | RDS(MySQL|PostgreSQL|Limitless Database) | DynamoDB | DocumentDB | Kinesis firehose | SES | KMS | Parameter Store | CloudFormation | OpenSearch | Cognito | SNS | CloudWatch | EventBridge | Step Functions | Glue | VPC Endpoint | Elastic Beanstalk
+VPC | S3 | CloudFront| CloudFront functions | API Gateway | Lambda | S3 Object Lambda | ELB | ECR | CodeCommit | CodeBuild | CodeDeploy | CodePipline | EC2 | ECS | Fargate | Route53 | ACM | IAM | RDS(MySQL|PostgreSQL) | Aurora(PostgreSQL|Limitless Database) | DynamoDB | DocumentDB | Kinesis firehose | SES | KMS | Parameter Store | CloudFormation | OpenSearch | Cognito | SNS | CloudWatch | EventBridge | Step Functions | Glue | VPC Endpoint | Elastic Beanstalk
 
 #### Google Cloud
 
