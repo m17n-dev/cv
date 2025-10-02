@@ -43,7 +43,7 @@ VPC | S3 | CloudFront| CloudFront functions | API Gateway | Lambda | S3 Object L
 
 #### Google Cloud
 
-Cloud Storage | Cloud Functions | Cloud Run | IAM | Cloud Pub/Sub | Cloud Source Repository | Firebase (Auth|RealtimeDatabase|Firestore|Cloud Messaging)
+Cloud Storage | Cloud Functions | Cloud Run | Batch | IAM | Cloud Pub/Sub | Cloud Source Repository | Firebase (Auth|RealtimeDatabase|Firestore|Cloud Messaging)
 
 ### SaaS/PaaS
 
@@ -75,12 +75,20 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 
 ## 主な業務経歴
 
-### 建設企業向けアプリケーションパッケージ開発【Terraform/JavaScript/TypeScript/AWS/Google Cloud】(2024年〜現在)
+### 建設企業向けアプリケーションパッケージ開発【Terraform/JavaScript/TypeScript/AWS/Google Cloud】(2024年〜2025年)
 
 【プロジェクト概要】建設企業向けのVRアプリケーションパッケージの開発
 
-【担当業務】SRE チームに所属し、Terraform による既存 AWS 環境のコード化、インフラ設計・構築・最適化を担当。開発チームとも密に連携し、開発の意図を理解した上で、アーキテクチャの最適化や AWS 新サービスの導入を推進。加えて、E2E テストの導入など、安定した運用と効率的な開発体制の構築に幅広く貢献。具体的には下記。
+【担当業務】SRE として、既存 AWS 環境の Terraform 化と環境横断の再現性確保を主導。要件に即したインフラ設計・構築・最適化に加え、CloudFront/ALB、RDS Proxy/Aurora などの適用でセキュリティ・性能を両立。Google Cloud（Cloud Run / Cloud Functions (Gen2) / Batch）との連携検証や、OIDC＋IAM によるクロスクラウド認証基盤を設計。集中ログ・監視（OpenSearch / Slack 通知）を整備し、運用の可視化と障害時の初動短縮を実現。さらに Playwright による E2E 自動テストや SDK/EOL 更改を計画的に実施し、継続運用性と開発効率を高めた。
 
+- Google Cloud 基盤構築／AWS 連携（設計～実装～検証）
+  - Pub/Sub + Cloud Functions (Gen2) + Cloud Run によるイベント駆動サンプルを設計・実装し、動作検証を実施
+  - Cloud Run サンプルアプリケーションのコンテナ化・デプロイと可用性／動作検証を実施
+  - Google Cloud Batch ジョブのサンプル実装（並列度・再試行・実行制御）と動作検証を実施
+  - AWS ECS Fargate -> Google Cloud Batch 連携を、サービスアカウントキー認証で実現
+  - サービスアカウント キーの AWS Secrets Manager での安全保管の手順をドキュメント化
+  - OpenID Connect（OIDC）＋ AWS IAM 連携により、Google Cloud Batch から AWS S3 への認証付きアクセスを実現
+  - OIDC を用いた AWS 認証フローのシーケンス図を作成し、開発・運用向けにドキュメント整備
 - AWS インフラ構築・最適化
   - DEV、STG、PROD 環境の構築と Terraform によるコード化
   - CloudFront 証明付き URL と VPC オリジン(ALB)の導入によるセキュリティ・性能向上
@@ -90,6 +98,7 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
   - Lambda トークン認証機能の導入
 - Slack 通知アプリの開発
   - EventBridge + CloudWatch Logs + Slack の構成による API 監視通知アプリを設計・実装
+  - Amazon SNS + Lambda + Slack の構成における Lambda 関数の AWS SDK JS v2 -> v3 改修
 - Amazon Aurora PostgreSQL Limitless Database 導入検証
   - コスト評価・移行手順のドキュメント化
   - リリース初期のサービスでありながら、実践的な導入検証を主導
@@ -100,8 +109,12 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 - Playwright による E2E テストの導入
   - アプリケーションの品質担保のため E2E 自動テストを提案・実装、Playwright により構築
   - 手動テスト負荷を軽減し、品質管理体制の効率化を実現
+- EOL 対応
+  - Lambda ランタイム更新作業
+  - EC2 AMI 更新作業
+  - Batch Launch Template AMI 更新作業
 
-【発揮したバリュー】AWS インフラの構築・運用、既存環境のコード化、最新データベースの検証、E2E テストの導入 など、SRE としての業務を担当。本プロジェクトでは SRE チームに所属しながらも、開発側とも積極的にコミュニケーションを取り、開発の意図を深く理解した上で、適切なインフラ設計・最適化を実施。Aurora PostgreSQL Limitless など新サービスを即時キャッチアップ・検証し、移行検討資料を作成。また、期日内での環境構築、新規 AWS サービスの迅速な導入、既存環境のコード化による管理負荷削減、E2E テストの導入のよる手動テストの負担軽減など、インフラの安定化と運用効率向上に大きく貢献。
+【発揮したバリュー】SRE として、要件背景と運用制約を踏まえた現実的なアーキテクチャを設計・実装し、環境差異の排除と再現性の高いリリース体制を確立しました。Terraform によるコード化と CloudFront／ALB、RDS Proxy／Aurora の適用でセキュリティ・性能・可用性を両立。OpenSearch と Slack 通知の統合により障害検知から特定までの時間を短縮しました。さらに、Cloud Run／Cloud Functions (Gen2)／Batch の連携や OIDC＋IAM の認証基盤を短期間で検証して移行手順と運用手引きを整備し、意思決定を支援。Playwright による E2E 自動化や SDK/EOL 更改を計画的に進め、技術負債の増加を抑制しつつ開発効率と継続運用性を向上させました。結果として、安定稼働と俊敏なリリースを両立し、チーム全体の開発・運用生産性を着実に引き上げました。
 
 ### エンタメ向けアプリケーション開発【Python/JavaScript/CloudFront/S3 Object Lambda/CloudFormation/AWS】(2023年〜2024年)
 
