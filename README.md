@@ -51,7 +51,7 @@ GitHub | GitHub Actions | GitLab | CircleCI
 
 ### その他
 
-Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND | DHCP | JMeter
+Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND | DHCP | JMeter | Playwright
 
 ## バリューを発揮しやすい業務
 
