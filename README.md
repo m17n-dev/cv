@@ -79,7 +79,7 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
 
 【プロジェクト概要】建設企業向けのVRアプリケーションパッケージの開発
 
-【担当業務】SRE として、既存 AWS 環境の Terraform 化と環境横断の再現性確保を主導。要件に即したインフラ設計・構築・最適化に加え、CloudFront/ALB、RDS Proxy/Aurora などの適用でセキュリティ・性能を両立。Google Cloud（Cloud Run / Cloud Functions (Gen2) / Batch）との連携検証や、OIDC＋IAM によるクロスクラウド認証基盤を設計。集中ログ・監視（OpenSearch / Slack 通知）を整備し、運用の可視化と障害時の初動短縮を実現。さらに Playwright による E2E 自動テストや SDK/EOL 更改を計画的に実施し、継続運用性と開発効率を高めた。
+【担当業務】SRE として、既存 AWS 環境の Terraform 化と環境横断の再現性確保を主導。要件に即したインフラ設計・構築・最適化に加え、CloudFront/ALB、RDS Proxy/Aurora などの適用でセキュリティ・性能を両立。Google Cloud（Cloud Run / Cloud Functions (Gen2) / Batch）との連携検証や、OIDC＋IAM によるクロスクラウド認証基盤を設計。集中ログ・監視（EventBridge / CloudWatch Logs / Slack 通知）を整備し、運用の可視化と障害時の初動短縮を実現。さらに Playwright による E2E 自動テストや SDK/EOL 更改を計画的に実施し、継続運用性と開発効率を高めた。
 
 - Google Cloud 基盤構築／AWS 連携（設計～実装～検証）
   - Pub/Sub + Cloud Functions (Gen2) + Cloud Run によるイベント駆動サンプルを設計・実装し、動作検証を実施
