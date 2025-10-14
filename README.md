@@ -114,7 +114,7 @@ Terraform | Docker | Jenkins | Chef | nginx | Apache | Tomcat | Webpack | BIND |
   - EC2 AMI 更新作業
   - Batch Launch Template AMI 更新作業
 
-【発揮したバリュー】SRE として、要件背景と運用制約を踏まえた現実的なアーキテクチャを設計・実装し、環境差異の排除と再現性の高いリリース体制を確立しました。Terraform によるコード化と CloudFront／ALB、RDS Proxy／Aurora の適用でセキュリティ・性能・可用性を両立。OpenSearch と Slack 通知の統合により障害検知から特定までの時間を短縮しました。さらに、Cloud Run／Cloud Functions (Gen2)／Batch の連携や OIDC＋IAM の認証基盤を短期間で検証して移行手順と運用手引きを整備し、意思決定を支援。Playwright による E2E 自動化や SDK/EOL 更改を計画的に進め、技術負債の増加を抑制しつつ開発効率と継続運用性を向上させました。結果として、安定稼働と俊敏なリリースを両立し、チーム全体の開発・運用生産性を着実に引き上げました。
+【発揮したバリュー】SRE として、要件背景と運用制約を踏まえた現実的なアーキテクチャを設計・実装し、環境差異の排除と再現性の高いリリース体制を確立しました。Terraform によるコード化と CloudFront／ALB、RDS Proxy／Aurora の適用でセキュリティ・性能・可用性を両立。EventBridge とCloudWatch Logs を活用したイベント駆動型 API 監視通知基盤を設計・実装し、障害検知から特定までの時間を短縮しました。また、既存通知アプリの Lambda 関数を AWS SDK v3 へ更新し、システムの安定性を維持しました。さらに、Cloud Run／Cloud Functions (Gen2)／Batch の連携や OIDC＋IAM の認証基盤を短期間で検証して移行手順と運用手引きを整備し、意思決定を支援。Playwright による E2E 自動化や SDK/EOL 更改を計画的に進め、技術負債の増加を抑制しつつ開発効率と継続運用性を向上させました。結果として、安定稼働と俊敏なリリースを両立し、チーム全体の開発・運用生産性を着実に引き上げました。
 
 ### エンタメ向けアプリケーション開発【Python/JavaScript/CloudFront/S3 Object Lambda/CloudFormation/AWS】(2023年〜2024年)
 
